@@ -19,6 +19,7 @@ body{background:var(--dark);color:#fff;}
 a{text-decoration:none;color:inherit;}
 img,video{display:block;max-width:100%;}
 .container{max-width:1240px;margin:0 auto;padding:0 32px;}
+
 /* ============ TOP BAR ============ */
 .topbar{background:#081527;border-bottom:1px solid rgba(255,255,255,.06);font-size:12.5px;color:#9db0c8;}
 .topbar .container{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 32px;flex-wrap:wrap;}
@@ -27,6 +28,7 @@ img,video{display:block;max-width:100%;}
 .tb-right a{display:flex;align-items:center;gap:6px;transition:color .2s;}
 .tb-right a:hover{color:var(--cyan);}
 .tb-right svg{width:14px;height:14px;flex:none;}
+
 /* ============ NAVBAR ============ */
 header{position:sticky;top:0;z-index:50;background:rgba(10,27,48,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);}
 nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
@@ -54,6 +56,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 .hamburger svg{width:26px;height:26px;}
 .mobile-menu{display:none;flex-direction:column;gap:4px;background:#0a1b30;border-top:1px solid rgba(255,255,255,.08);padding:14px 32px 20px;}
 .mobile-menu a{padding:10px 0;font-weight:600;color:#c6d4e6;border-bottom:1px solid rgba(255,255,255,.06);}
+
 /* ============ HERO ============ */
 .hero{position:relative;overflow:hidden;background:
   radial-gradient(800px 420px at 75% 25%,rgba(33,150,243,.16),transparent 60%),
@@ -77,6 +80,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 .hstat .ico svg{width:19px;height:19px;}
 .hstat b{display:block;font-size:14px;}
 .hstat span{font-size:12px;color:var(--muted);}
+
 .hero-photo-wrap{position:relative;display:flex;justify-content:center;align-items:center;}
 .blob-frame{position:relative;width:min(430px,100%);border-radius:46% 54% 50% 50%/48% 46% 54% 52%;overflow:hidden;
   border:6px solid var(--green);box-shadow:0 0 0 9px rgba(46,234,141,.22),0 28px 60px rgba(0,0,0,.55),0 0 80px rgba(46,234,141,.2);
@@ -88,6 +92,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 .badge-live{position:absolute;top:3%;left:2%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:999px;padding:8px 17px;font-size:11.5px;font-weight:800;letter-spacing:1px;display:flex;align-items:center;gap:8px;box-shadow:0 10px 24px rgba(33,150,243,.5);}
 .badge-live .dot{width:7px;height:7px;border-radius:50%;background:#fff;animation:pulse 1.6s infinite;}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.8);}70%{box-shadow:0 0 0 8px rgba(255,255,255,0);}100%{box-shadow:0 0 0 0 rgba(255,255,255,0);}}
+
 /* ============ SERVICES (white section like screenshot) ============ */
 .services{background:#f4f7fb;color:var(--ink);padding:84px 0;}
 .services .kicker{font-size:12px;font-weight:800;letter-spacing:2.5px;color:var(--blue);text-transform:uppercase;display:block;margin-bottom:10px;}
@@ -103,6 +108,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 .card h3 .arr{color:#b7c6da;font-weight:400;transition:transform .2s,color .2s;}
 .card:hover h3 .arr{transform:translateX(4px);color:var(--blue);}
 .card p{font-size:13px;color:#6b7c93;line-height:1.6;}
+
 /* ============ OUR WORK (live from Supabase) ============ */
 .work{background:linear-gradient(180deg,#071426,#0a1b30 45%,#071426);padding:84px 0;border-top:1px solid rgba(255,255,255,.05);}
 .work-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px;}
@@ -115,7 +121,6 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 .work-card:hover{transform:translateY(-6px);border-color:rgba(46,234,141,.5);box-shadow:0 20px 44px rgba(0,0,0,.45);}
 .work-media{position:relative;aspect-ratio:4/3;background:#0c2038;overflow:hidden;}
 .work-media img,.work-media video{width:100%;height:100%;object-fit:cover;}
-.work-media video{background:#0c2038;}
 .work-media .type{position:absolute;top:10px;left:10px;background:rgba(4,13,26,.75);backdrop-filter:blur(6px);border-radius:8px;padding:4px 10px;font-size:10.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--cyan);display:flex;align-items:center;gap:5px;}
 .work-media .type svg{width:11px;height:11px;}
 .work-body{padding:15px 17px 17px;}
@@ -127,6 +132,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
 .skeleton{aspect-ratio:4/3;border-radius:18px;background:linear-gradient(100deg,rgba(255,255,255,.05) 40%,rgba(255,255,255,.12) 50%,rgba(255,255,255,.05) 60%);background-size:200% 100%;animation:shimmer 1.4s infinite;}
 @keyframes shimmer{to{background-position:-200% 0;}}
+
 /* ============ WHY CHOOSE (dark, like screenshot) ============ */
 .why{background:radial-gradient(700px 400px at 88% 15%,rgba(33,150,243,.14),transparent 60%),linear-gradient(180deg,#0a1b30,#071426);padding:84px 0;border-top:1px solid rgba(255,255,255,.05);}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
@@ -148,6 +154,35 @@ nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
 .why-photo .overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(4,13,26,.92));display:flex;align-items:flex-end;padding:26px;}
 .overlay-card{background:rgba(8,21,39,.85);backdrop-filter:blur(10px);border:1px solid rgba(34,211,238,.35);border-radius:14px;padding:15px 19px;font-size:13px;color:#c6d4e6;line-height:1.55;}
 .overlay-card b{color:var(--cyan);}
+
+
+/* ============ LIKES + RATING + VIEW ALL ============ */
+.work-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:13px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);}
+.stars{display:flex;align-items:center;gap:3px;}
+.star{width:19px;height:19px;cursor:pointer;fill:#3b4d66;transition:transform .15s,fill .15s;flex:none;}
+.star.on{fill:#fbbf24;}
+.star:hover{transform:scale(1.2);}
+.rating-avg{font-size:12.5px;color:#fbbf24;font-weight:800;margin-left:5px;white-space:nowrap;}
+.like-btn{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:7px 14px;cursor:pointer;color:#dbe6f3;font-size:13px;font-weight:700;transition:.2s;font-family:inherit;flex:none;}
+.like-btn svg{width:16px;height:16px;fill:none;stroke:#f87171;stroke-width:2.2;transition:.2s;}
+.like-btn:hover{border-color:rgba(248,113,113,.6);}
+.like-btn:active{transform:scale(.93);}
+.like-btn.liked{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.65);}
+.like-btn.liked svg{fill:#ef4444;stroke:#ef4444;}
+.view-all-wrap{grid-column:1/-1;text-align:center;padding-top:8px;}
+.view-all-btn{display:inline-flex;align-items:center;gap:9px;background:transparent;border:1.5px solid rgba(46,234,141,.5);color:var(--green);font-weight:800;font-size:14px;border-radius:999px;padding:13px 30px;cursor:pointer;transition:.2s;font-family:inherit;}
+.view-all-btn:hover{background:rgba(46,234,141,.1);transform:translateY(-2px);}
+.view-all-btn svg{width:16px;height:16px;}
+@media (max-width:640px){
+  .work-grid{gap:14px;}
+  .work-actions{margin-top:11px;padding-top:11px;}
+  .star{width:22px;height:22px;}
+  .rating-avg{font-size:13px;}
+  .like-btn{padding:9px 16px;font-size:14px;}
+  .like-btn svg{width:18px;height:18px;}
+  .view-all-btn{width:100%;justify-content:center;padding:15px;}
+}
+
 /* ============ FOOTER ============ */
 footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:42px;padding:64px 0 46px;}
@@ -166,6 +201,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);}
 .footer-bottom .links{display:flex;gap:20px;}
 .footer-bottom a:hover{color:var(--cyan);}
+
 /* ============ MODAL (Request a Service) ============ */
 .modal-bg{position:fixed;inset:0;background:rgba(3,9,18,.78);backdrop-filter:blur(8px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px;}
 .modal-bg.open{display:flex;animation:fadeIn .25s ease;}
@@ -187,20 +223,24 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
 .submit-btn{width:100%;margin-top:6px;padding:14px;font-size:15px;justify-content:center;}
 .submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
 .form-note{font-size:12px;color:var(--muted);text-align:center;margin-top:12px;}
+
 /* Toast */
 .toast{position:fixed;bottom:96px;left:50%;transform:translateX(-50%) translateY(20px);background:linear-gradient(90deg,#0e9f6e,#22c55e);color:#fff;font-weight:700;font-size:14px;border-radius:999px;padding:13px 26px;box-shadow:0 16px 40px rgba(34,197,94,.45);opacity:0;pointer-events:none;transition:.35s;z-index:200;display:flex;align-items:center;gap:9px;}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 .toast svg{width:17px;height:17px;}
+
 /* WA float */
 .wa-float{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 28px rgba(34,197,94,.5);z-index:90;transition:transform .2s;}
 .wa-float:hover{transform:scale(1.1);}
 .wa-float svg{width:29px;height:29px;fill:#fff;}
+
 /* Lightbox */
 .lightbox{position:fixed;inset:0;background:rgba(2,7,14,.94);z-index:150;display:none;align-items:center;justify-content:center;padding:24px;flex-direction:column;gap:14px;}
 .lightbox.open{display:flex;animation:fadeIn .25s ease;}
 .lightbox img,.lightbox video{max-width:min(920px,94vw);max-height:78vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.7);}
 .lightbox .lb-title{font-size:16px;font-weight:700;color:#e6eef8;}
 .lightbox .lb-close{position:absolute;top:22px;right:26px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:19px;cursor:pointer;}
+
 @media (max-width:1024px){
   .cards,.work-grid{grid-template-columns:repeat(2,1fr);}
   .hero .container{grid-template-columns:1fr;text-align:center;}
@@ -210,73 +250,20 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .script-tag{display:none;}
 }
-/* ============ PHONE ONLY (do not affect desktop) ============ */
 @media (max-width:640px){
-  .container{padding:0 16px;}
-  .topbar .container{padding:8px 16px;gap:10px;}
-  .tb-left{display:none;}
-  .tb-right{gap:12px;width:100%;justify-content:center;flex-wrap:wrap;}
-  .tb-right a{font-size:11.5px;}
-  nav{height:64px;}
-  .logo-mark{width:38px;height:38px;}
-  .logo-text b{font-size:18px;}
-  .logo-text span{display:none;}
   .nav-links{display:none;}
-  .nav-right{gap:10px;}
-  .icon-btn{display:none;}
-  .btn{padding:11px 18px;font-size:13.5px;}
-  .nav-right .btn-blue{padding:10px 16px;font-size:13px;}
   .hamburger{display:block;}
-  .mobile-menu{padding:12px 16px 18px;}
-  .hero .container{padding-top:40px;padding-bottom:50px;gap:28px;}
-  .eyebrow{font-size:11px;letter-spacing:2px;margin-bottom:12px;}
-  .hero h1{font-size:clamp(30px,8.5vw,40px);letter-spacing:-.8px;}
-  .hero .lead{font-size:14.5px;margin:16px auto 24px;max-width:100%;}
-  .hero-cta{gap:10px;justify-content:center;}
-  .hero-cta .btn{width:100%;justify-content:center;max-width:280px;}
-  .hero-stats{margin-top:32px;padding-top:20px;gap:16px;justify-content:center;}
-  .hstat{padding-right:0;margin-right:0;border-right:none;flex:1 1 100%;justify-content:flex-start;max-width:280px;margin:0 auto;}
-  .hstat .ico{width:36px;height:36px;}
-  .blob-frame{width:min(300px,88vw);border-width:4px;box-shadow:0 0 0 6px rgba(46,234,141,.2),0 18px 40px rgba(0,0,0,.5);}
-  .badge-live{padding:6px 12px;font-size:10.5px;top:2%;left:0;}
-  .services{padding:56px 0;}
-  .services-head{margin-bottom:28px;align-items:flex-start;gap:16px;}
-  .services-head .btn{width:100%;justify-content:center;}
-  .services .sub{max-width:100%;}
-  .cards{grid-template-columns:1fr;gap:14px;}
-  .card{padding:20px 18px;}
-  .work{padding:56px 0;}
-  .work-head{margin-bottom:28px;align-items:flex-start;gap:12px;}
-  .work-grid{grid-template-columns:1fr;gap:14px;}
-  .work-body{padding:13px 14px 15px;}
-  .why{padding:56px 0;}
-  .why-grid{gap:32px;}
-  .why-stats{grid-template-columns:1fr;gap:12px;margin-top:28px;}
-  .why-photo img{min-height:280px;}
-  .why-photo .overlay{padding:18px;}
-  .footer-grid{grid-template-columns:1fr;gap:28px;padding:48px 0 36px;}
-  .f-about p{max-width:100%;}
-  .footer-bottom{flex-direction:column;text-align:center;gap:10px;padding:16px 0;}
-  .footer-bottom .links{gap:16px;justify-content:center;}
+  .cards,.work-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .why-stats{grid-template-columns:1fr;}
   .field-row{grid-template-columns:1fr;}
-  .modal{padding:22px 18px 20px;border-radius:18px;}
-  .modal-head h3{font-size:18px;}
-  .lightbox{padding:16px;}
-  .lightbox img,.lightbox video{max-height:70vh;border-radius:10px;}
-  .lightbox .lb-close{top:14px;right:14px;width:38px;height:38px;}
-  .wa-float{bottom:18px;right:18px;width:52px;height:52px;}
-  .wa-float svg{width:26px;height:26px;}
-  .toast{bottom:80px;font-size:13px;padding:11px 20px;}
-}
-@media (max-width:380px){
-  .hero h1{font-size:28px;}
-  .nav-right .btn-blue span,.nav-right .btn-blue svg:last-child{display:none;}
-  .nav-right .btn-blue{padding:10px 14px;}
+  .hstat{padding-right:18px;margin-right:18px;}
+  .topbar .tb-left{display:none;}
 }
 </style>
-<base target="_blank">
 </head>
 <body>
+
 <!-- ================= TOP BAR ================= -->
 <div class="topbar">
   <div class="container">
@@ -300,6 +287,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </div>
   </div>
 </div>
+
 <!-- ================= NAVBAR ================= -->
 <header>
   <div class="container">
@@ -320,19 +308,17 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
         <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
         <button class="btn btn-blue" onclick="openModal()">Request a Service
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        <button class="hamburger" onclick="document.getElementById('mmenu').style.display='flex'" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
     </nav>
   </div>
   <div class="mobile-menu" id="mmenu">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#services" onclick="closeMenu()">Services</a>
-    <a href="#about" onclick="closeMenu()">About Us</a>
-    <a href="#work" onclick="closeMenu()">Gallery</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-    <a href="#" onclick="openModal();closeMenu();return false;" style="color:var(--cyan)">Request a Service</a>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a>
+    <a href="#work">Gallery</a><a href="#contact">Contact</a>
+    <a href="#" onclick="openModal();return false;" style="color:var(--cyan)">Request a Service</a>
   </div>
 </header>
+
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
   <div class="hero-pipes"></div>
@@ -373,6 +359,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </div>
   </div>
 </section>
+
 <!-- ================= SERVICES ================= -->
 <section class="services" id="services">
   <div class="container">
@@ -429,6 +416,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </div>
   </div>
 </section>
+
 <!-- ================= OUR WORK (LIVE) ================= -->
 <section class="work" id="work">
   <div class="container">
@@ -444,6 +432,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </div>
   </div>
 </section>
+
 <!-- ================= WHY CHOOSE ================= -->
 <section class="why" id="about">
   <div class="container">
@@ -482,6 +471,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </div>
   </div>
 </section>
+
 <!-- ================= FOOTER ================= -->
 <footer id="contact">
   <div class="container">
@@ -538,6 +528,7 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </div>
   </div>
 </footer>
+
 <!-- ================= REQUEST MODAL ================= -->
 <div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()">
   <div class="modal">
@@ -570,31 +561,46 @@ footer{background:#050e1b;border-top:1px solid rgba(255,255,255,.07);}
     </form>
   </div>
 </div>
+
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" onclick="if(event.target===this||event.target.classList.contains('lb-close'))closeLightbox()">
   <button class="lb-close">&times;</button>
   <div id="lbContent"></div>
   <div class="lb-title" id="lbTitle"></div>
 </div>
+
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 13l4 4L19 7"/></svg><span id="toastMsg">Sent!</span></div>
+
 <a class="wa-float" href="https://wa.me/2349065237572" target="_blank" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm4.6 12.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.6.1-.7l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
 </a>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const SUPABASE_URL = 'https://ldqwjeesgxhnjzeorpns.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_ndhFLdalhv4GzLPqJf60mQ_LxzuLOhn';
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const grid = document.getElementById('workGrid');
-/* ---------- Mobile menu ---------- */
-function toggleMenu(){
-  const m = document.getElementById('mmenu');
-  m.style.display = (m.style.display === 'flex') ? 'none' : 'flex';
+
+/* ---------- Visitor identity (for likes & ratings) ---------- */
+function getClientId(){
+  let id = localStorage.getItem('jero_client_id');
+  if (!id){ id = (crypto.randomUUID) ? crypto.randomUUID() : 'c' + Date.now() + Math.random().toString(36).slice(2); localStorage.setItem('jero_client_id', id); }
+  return id;
 }
-function closeMenu(){
-  document.getElementById('mmenu').style.display = 'none';
+const likedSet = new Set();      // post ids this visitor liked
+const ratedMap = {};             // post id -> my rating (1-5)
+async function loadMyActivity(){
+  const cid = getClientId();
+  try {
+    const { data: likes } = await sb.from('post_likes').select('post_id').eq('client_id', cid);
+    if (likes) likes.forEach(l => likedSet.add(l.post_id));
+    const { data: ratings } = await sb.from('post_ratings').select('post_id,rating').eq('client_id', cid);
+    if (ratings) ratings.forEach(r => ratedMap[r.post_id] = r.rating);
+  } catch(e){ /* tables may not exist yet — UI still works */ }
 }
-/* ---------- Render posts ---------- */
+
+/* ---------- Helpers ---------- */
 function timeAgo(d){
   const s = Math.floor((Date.now() - new Date(d)) / 1000);
   if (s < 60) return 'just now';
@@ -602,6 +608,24 @@ function timeAgo(d){
   if (s < 86400) return Math.floor(s/3600) + ' hr ago';
   return Math.floor(s/86400) + ' day' + (s>=172800?'s':'') + ' ago';
 }
+function escapeHtml(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function isMobile(){ return window.matchMedia('(max-width:640px)').matches; }
+
+/* ---------- Render posts ---------- */
+let posts = [];
+let showAll = false;
+
+function starsHTML(p){
+  const avg = (p.rating_count && p.rating_sum) ? (p.rating_sum / p.rating_count) : 0;
+  const shown = ratedMap[p.id] || avg;
+  let stars = '';
+  for (let i = 1; i <= 5; i++){
+    stars += `<svg class="star ${i <= Math.round(shown) ? 'on' : ''}" viewBox="0 0 24 24" onclick="ratePost(event,'${p.id}',${i})"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.5 5.8 21l1.6-7L2 9.3l7.1-.7z"/></svg>`;
+  }
+  const label = p.rating_count ? (avg.toFixed(1)) : 'Rate';
+  return `<div class="stars">${stars}<span class="rating-avg">${label}</span></div>`;
+}
+
 function cardHTML(p){
   const media = p.media_type === 'video'
     ? `<video src="${p.media_url}" preload="metadata" muted playsinline webkit-playsinline></video>`
@@ -609,46 +633,106 @@ function cardHTML(p){
   const icon = p.media_type === 'video'
     ? `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> VIDEO`
     : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> PHOTO`;
+  const liked = likedSet.has(p.id);
   return `<div class="work-card" onclick="openLightbox('${p.id}')">
     <div class="work-media">${media}<span class="type">${icon}</span></div>
     <div class="work-body">
       <h3>${escapeHtml(p.title)}</h3>
       <div class="meta"><span class="cat">${escapeHtml(p.category || 'General')}</span><span>${timeAgo(p.created_at)}</span></div>
+      <div class="work-actions">
+        ${starsHTML(p)}
+        <button class="like-btn ${liked ? 'liked' : ''}" onclick="toggleLike(event,'${p.id}')">
+          <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <span>${p.likes_count || 0}</span>
+        </button>
+      </div>
     </div>
   </div>`;
 }
-function escapeHtml(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-let posts = [];
+
 function fixVideoThumbs(){
   document.querySelectorAll('.work-media video').forEach(function(v){
-    // Force first frame to appear on mobile (especially iOS/Safari)
-    v.addEventListener('loadedmetadata', function(){
-      try { v.currentTime = 0.05; } catch(e){}
-    }, { once: true });
-    v.addEventListener('seeked', function(){
-      // pause so it stays on the frame
-      try { v.pause(); } catch(e){}
-    }, { once: true });
-    // Ensure metadata loads
+    v.addEventListener('loadedmetadata', function(){ try { v.currentTime = 0.05; } catch(e){} }, { once: true });
+    v.addEventListener('seeked', function(){ try { v.pause(); } catch(e){} }, { once: true });
     try { v.load(); } catch(e){}
   });
 }
+
 function renderPosts(){
   if (!posts.length){
     grid.innerHTML = `<div class="empty-state"><b>No work posted yet</b>Check back soon — our latest projects will appear here live.</div>`;
     return;
   }
-  grid.innerHTML = posts.map(cardHTML).join('');
-  // Fix video previews after DOM update
+  /* Mobile: show only 4 unless "View All" tapped — keeps phone page short */
+  const visible = (isMobile() && !showAll) ? posts.slice(0, 4) : posts;
+  let html = visible.map(cardHTML).join('');
+  if (isMobile() && posts.length > 4){
+    html += `<div class="view-all-wrap">
+      <button class="view-all-btn" onclick="toggleShowAll()">
+        ${showAll
+          ? 'Show Less <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 15l-6-6-6 6"/></svg>'
+          : 'View All Work (' + posts.length + ') <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>'}
+      </button>
+    </div>`;
+  }
+  grid.innerHTML = html;
   setTimeout(fixVideoThumbs, 50);
 }
+function toggleShowAll(){ showAll = !showAll; renderPosts(); if (showAll) document.getElementById('work').scrollIntoView({behavior:'smooth'}); }
+window.addEventListener('resize', () => renderPosts());
+
 async function loadPosts(){
   const { data, error } = await sb.from('posts').select('*').order('created_at', { ascending: false });
   if (!error && data){ posts = data; renderPosts(); }
   else grid.innerHTML = `<div class="empty-state"><b>Gallery coming soon</b>We're setting things up. Please check back shortly.</div>`;
 }
-loadPosts();
-/* Realtime — new post appears instantly */
+loadMyActivity().then(loadPosts);
+
+/* ---------- Likes ---------- */
+async function toggleLike(e, id){
+  e.stopPropagation();
+  const cid = getClientId();
+  const p = posts.find(x => x.id === id); if (!p) return;
+  const btn = e.currentTarget;
+  btn.style.pointerEvents = 'none';
+  try {
+    if (likedSet.has(id)){
+      await sb.from('post_likes').delete().eq('post_id', id).eq('client_id', cid);
+      p.likes_count = Math.max(0, (p.likes_count || 0) - 1);
+      likedSet.delete(id);
+    } else {
+      await sb.from('post_likes').insert({ post_id: id, client_id: cid });
+      p.likes_count = (p.likes_count || 0) + 1;
+      likedSet.add(id);
+      showToast('Liked! ❤️');
+    }
+  } catch(err){ /* ignore duplicate race */ }
+  btn.style.pointerEvents = '';
+  renderPosts();
+}
+
+/* ---------- 5-Star Rating ---------- */
+async function ratePost(e, id, val){
+  e.stopPropagation();
+  const cid = getClientId();
+  const p = posts.find(x => x.id === id); if (!p) return;
+  const prev = ratedMap[id];
+  try {
+    if (prev){
+      await sb.from('post_ratings').update({ rating: val }).eq('post_id', id).eq('client_id', cid);
+      p.rating_sum = (p.rating_sum || 0) - prev + val;
+    } else {
+      await sb.from('post_ratings').insert({ post_id: id, client_id: cid, rating: val });
+      p.rating_sum = (p.rating_sum || 0) + val;
+      p.rating_count = (p.rating_count || 0) + 1;
+    }
+    ratedMap[id] = val;
+    showToast('Thanks for rating! ⭐');
+  } catch(err){ /* ignore */ }
+  renderPosts();
+}
+
+/* ---------- Realtime ---------- */
 sb.channel('public-posts')
   .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'posts' }, payload => {
     posts.unshift(payload.new); renderPosts();
@@ -657,7 +741,12 @@ sb.channel('public-posts')
   .on('postgres_changes', { event: 'DELETE', schema: 'public', table: 'posts' }, payload => {
     posts = posts.filter(p => p.id !== payload.old.id); renderPosts();
   })
+  .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'posts' }, payload => {
+    posts = posts.map(p => p.id === payload.new.id ? { ...p, ...payload.new } : p);
+    renderPosts();
+  })
   .subscribe();
+
 /* ---------- Lightbox ---------- */
 function openLightbox(id){
   const p = posts.find(x => x.id === id); if (!p) return;
@@ -674,6 +763,7 @@ function closeLightbox(){
   document.getElementById('lbContent').innerHTML = '';
   document.body.style.overflow = '';
 }
+
 /* ---------- Request modal ---------- */
 function openModal(service){
   document.getElementById('modalBg').classList.add('open');
@@ -690,6 +780,7 @@ function showToast(msg){
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 3500);
 }
+
 document.getElementById('requestForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
@@ -706,7 +797,8 @@ document.getElementById('requestForm').addEventListener('submit', async e => {
   e.target.reset(); closeModal();
   showToast('Request sent! We will contact you shortly.');
 });
-document.addEventListener('keydown', e => { if (e.key === 'Escape'){ closeModal(); closeLightbox(); closeMenu(); } });
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape'){ closeModal(); closeLightbox(); } });
 </script>
 </body>
 </html>
